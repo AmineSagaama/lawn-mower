@@ -1,4 +1,4 @@
-package com.mowitnow.boot.rest.model;
+package com.mowitnow.boot.rest.domain.model;
 
 /**
  * Created by Amine Sagaama on 13/11/2016.
@@ -34,7 +34,7 @@ public class LawnMower {
         location.turnLeft();
     }
 
-    public String executeCommands(String commands) {
+    public void executeCommands(String commands) {
         StringBuilder output = new StringBuilder();
         for (char command : commands.toCharArray()) {
             switch (command) {
@@ -49,7 +49,6 @@ public class LawnMower {
                     break;
             }
         }
-        return output.toString();
     }
 }
 

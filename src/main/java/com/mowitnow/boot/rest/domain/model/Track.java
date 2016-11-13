@@ -1,4 +1,4 @@
-package com.mowitnow.boot.rest.model;
+package com.mowitnow.boot.rest.domain.model;
 
 import java.util.List;
 

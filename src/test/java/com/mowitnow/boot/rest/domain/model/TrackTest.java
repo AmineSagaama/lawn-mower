@@ -1,5 +1,6 @@
-package com.mowitnow.boot.rest.model;
+package com.mowitnow.boot.rest.domain.model;
 
+import org.assertj.core.api.Assertions;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -32,6 +33,6 @@ public class TrackTest {
 
     @Test
     public void whenInstantiatedThenBordersAreSet() {
-        assertThat(track.getBorders()).isEqualTo(borders);
+        Assertions.assertThat(track.getBorders()).isEqualTo(borders);
     }
 }

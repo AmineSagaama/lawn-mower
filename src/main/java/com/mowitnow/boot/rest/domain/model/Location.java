@@ -1,4 +1,4 @@
-package com.mowitnow.boot.rest.model;
+package com.mowitnow.boot.rest.domain.model;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -114,5 +114,10 @@ public class Location {
 
     public void turnRight() {
         this.direction = direction.turnRight();
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s %s %s", point.getX(), point.getY(), direction.getShortName());
     }
 }

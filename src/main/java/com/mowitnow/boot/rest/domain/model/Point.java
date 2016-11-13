@@ -1,4 +1,4 @@
-package com.mowitnow.boot.rest.model;
+package com.mowitnow.boot.rest.domain.model;
 
 /**
  * Created by Amine Sagaama on 13/11/2016.
